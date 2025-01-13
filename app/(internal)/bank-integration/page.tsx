@@ -28,7 +28,8 @@ function BankIntegration() {
 
   const onSuccess = async (itemData: { item: any; }) => {
     const data = await accountsTransactions(itemData.item.id) // itemId = (Nubank ID ou Caixa ID ou C6 Bank ID)
-    console.log(data)
+    console.log(itemData.item.id)
+    console.log(itemData.item.connector.name)
     // Acredito que tera que armazenar no BE as transações ou qualquer outro tipo de informação
     // que for pega do usuario. (da pra fazer a inserção no BE pelo next mesmo, ja que vcs estão usando postgres)
     setIsPluggyWidgetOpen(false)

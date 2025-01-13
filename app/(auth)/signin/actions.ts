@@ -34,6 +34,6 @@ export async function signin(state: SigninFormState, formData: FormData) {
   const { userId } = await response.json()
   
   await createSession(userId)
-  // redirect('/auth-token') pulando essa parte por enquanto e mandando direto para a dashboard.
-  redirect('/dashboard')
+  redirect('/auth-token')
+  // redirect('/dashboard')
 }

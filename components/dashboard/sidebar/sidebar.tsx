@@ -23,11 +23,11 @@ const items = [
     url: "/expenses",
     icon: Inbox,
   },
-  {
-    title: "Conecte seu banco",
-    url: "/bank-integration",
-    icon: Landmark,
-  }
+  // {
+  //   title: "Conecte seu banco",
+  //   url: "/bank-integration",
+  //   icon: Landmark,
+  // }
 ]
 
 export function AppSidebar() {
