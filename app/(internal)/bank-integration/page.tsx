@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { accountsTransactions, createConnectToken } from "./actions";
-import type { PluggyConnect as PluggyConnectType } from "react-pluggy-connect";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+import type { PluggyConnect as PluggyConnectType } from "react-pluggy-connect";
+import { createConnectToken } from "./actions";
 
 const PluggyConnect = dynamic(
   () =>
