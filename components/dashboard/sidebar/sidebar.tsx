@@ -1,4 +1,4 @@
-import { Home, Inbox, Landmark } from "lucide-react"
+import { Home, Inbox } from "lucide-react";
 
 import {
   Sidebar,
@@ -9,8 +9,8 @@ import {
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem
-} from "@/components/ui/sidebar"
+  SidebarMenuItem,
+} from "@/components/ui/sidebar";
 
 const items = [
   {
@@ -28,18 +28,19 @@ const items = [
   //   url: "/bank-integration",
   //   icon: Landmark,
   // }
-]
+];
 
 export function AppSidebar() {
   return (
-    <Sidebar variant="floating" collapsible="icon"> 
+    <Sidebar variant="floating" collapsible="icon">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg">
-              <div className='grid flex-1 text-left text-xl leading-tight'>
-                <p className='truncate font-bold'>
-                  <span className="text-[#00b490] font-semibold">Minhas</span> Finanças
+              <div className="grid flex-1 text-left text-xl leading-tight">
+                <p className="truncate font-bold">
+                  <span className="text-[#00b490] font-semibold">Minhas</span>{" "}
+                  Finanças
                 </p>
               </div>
             </SidebarMenuButton>
@@ -67,5 +68,5 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-  )
+  );
 }
